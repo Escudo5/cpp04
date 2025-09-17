@@ -6,14 +6,14 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:25:03 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/16 16:55:30 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/17 13:02:05 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
+#include "WrongAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
-#include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
 
 int main()
@@ -28,3 +28,8 @@ int main()
     meta->makeSound();
     return 0;
 }
+
+
+
+
+//comprobar leaks y añadir delete si necesario en main.

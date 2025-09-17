@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:49:10 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/16 16:56:10 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/17 12:52:33 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@
 #include <iostream>
 
 class WrongAnimal
-{
+{   
+    public:
+    
         WrongAnimal();
         WrongAnimal(const WrongAnimal &copy);
-        WrongAnimal(std::string name);
+        WrongAnimal(std::string type);
         WrongAnimal &operator=(const WrongAnimal &copy);
-        virtual ~WrongAnimal();
+        ~WrongAnimal();
     
         void makeSound() const;
         std::string getType()const;

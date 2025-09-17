@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:51:50 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/16 16:56:21 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/17 12:59:56 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ WrongAnimal::WrongAnimal(std::string type)
 WrongAnimal::WrongAnimal(const WrongAnimal &copy)
 {
     this->type = copy.type;
-    *this = copy;
 }
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &copy)
