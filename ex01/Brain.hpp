@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 13:11:17 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/17 13:15:22 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/17 16:33:45 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,13 @@ class Brain
 
 
         
-        std::string ideas[100];
         void setIdea(int i, std::string idea);
-        std::string getIdea(int i);
-
-
-    
+        std::string getIdea(int i) const; 
+        
+        
+    private:
+        std::string ideas[100];
+        
     
 };
 

@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 15:44:22 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/17 13:18:24 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/18 13:54:49 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class Dog : public Animal
         ~Dog();
 
         void makeSound() const;
+        std::string getType()const;
 
     
     private:
