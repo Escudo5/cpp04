@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 15:44:22 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/18 13:54:49 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/18 15:58:34 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 #define DOG_HPP
 
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Brain.hpp"
 
 
-class Dog : public Animal
+class Dog : public AAnimal
 {
     public:
         Dog();

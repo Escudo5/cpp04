@@ -1,51 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   AAAnimal.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 15:58:02 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/16 16:47:17 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/18 16:03:20 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 
-Animal::Animal()
+AAnimal::AAnimal()
 {
-    std::cout << "Default Animal constructor" << std::endl;
+    std::cout << "Default AAnimal constructor" << std::endl;
 }
 
-Animal::Animal(std::string type)
+AAnimal::AAnimal(std::string type)
 {
     std::cout << "String constructor called " << type << std::endl;
     this->type = type;
 }
 
-Animal::Animal(const Animal &copy)
+AAnimal::AAnimal(const AAnimal &copy)
 {
     this->type = copy.type;
     *this = copy;
 }
 
-Animal &Animal::operator=(const Animal &copy)
+AAnimal &AAnimal::operator=(const AAnimal &copy)
 {
     this->type = copy.type;
     return(*this);
 }
 
-void Animal::makeSound() const
+void AAnimal::makeSound() const
 {
-    std::cout << "No animal, so no sound paying... " << std::endl;
+    std::cout << "No AAnimal, so no sound paying... " << std::endl;
 }
 
-Animal::~Animal()
+AAnimal::~AAnimal()
 {
-    std::cout << "Animal destructor" << std::endl;
+    std::cout << "AAnimal destructor" << std::endl;
 }
 
-std::string Animal::getType()const
+std::string AAnimal::getType()const
 {
     return(this->type);
 }

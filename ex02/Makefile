@@ -1,7 +1,7 @@
 
-NAME = ex01
+NAME = ex02
 
-SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp
+SRC = main.cpp AAnimal.cpp Dog.cpp Cat.cpp Brain.cpp
 OBJ = $(SRC:.cpp=.o)
 
 CC = c++
@@ -17,7 +17,7 @@ $(NAME) : $(OBJ)
 
 clean:
 	@rm -rf $(OBJ)
-	@echo "[ex01] Object files cleaned."
+	@echo "[ex02] Object files cleaned."
 
 fclean: clean
 	@rm -rf $(NAME)

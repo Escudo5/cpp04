@@ -6,13 +6,13 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 16:01:13 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/18 14:06:02 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/18 15:56:23 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog() : Animal("Dog")
+Dog::Dog() : AAnimal("Dog")
 {
     brain = new Brain();
     std::cout << "Calling default Dog constructor" << std::endl;

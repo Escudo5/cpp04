@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 15:45:18 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/18 13:58:19 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/18 15:58:54 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 #define CAT_HPP
 
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Brain.hpp"
 
 
-class Cat : public Animal
+class Cat : public AAnimal
 {
     private:
         Brain *brain;
