@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 17:20:25 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/18 17:51:56 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/18 17:54:46 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ Cure::~Cure()
 
 AMateria *Cure::clone() const
 {
-    
+    return new Cure (*this);
+
 }
