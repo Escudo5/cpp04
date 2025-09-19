@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 17:04:56 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/19 15:37:24 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 16:35:23 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ Ice::Ice()  : AMateria("ice")
 
 }
 
-// Ice::Ice(const Ice &copy) : AMateria(copy)
-// {
+Ice::Ice(const Ice &copy) : AMateria(copy)
+{
 
-// }
+}
 
 // Ice &Ice::operator=(const Ice &copy)
 // {
@@ -44,10 +44,10 @@ Ice::~Ice()
 
 AMateria *Ice::clone() const
 {
-    return new Ice (*this);
+    return new Ice(*this);
 }
 
 void Ice::use(ICharacter& target)
 {
-    std::cout <<  " *shoots an ice bolt at" <<  target.getName() << " *" <<std::endl;
+    std::cout <<  " *shoots an ice bolt at " <<  target.getName() << " *" <<std::endl;
 }

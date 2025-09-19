@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 17:20:25 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/19 15:38:23 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 16:35:33 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ Cure::Cure() : AMateria("cure")
     
 }
 
-// Cure::Cure (const Cure &copy) : AMateria(copy)
-// {
+Cure::Cure (const Cure &copy) : AMateria(copy)
+{
 
-// }
+}
 
 // Cure &Cure::operator=(const Cure &copy)
 // {
@@ -39,12 +39,11 @@ Cure::~Cure()
 
 AMateria *Cure::clone() const
 {
-    return new Cure (*this);
-
+    return new Cure(*this);
 }
 
 void Cure::use(ICharacter& target)
 {
-    std::cout <<  " *heals" <<  target.getName() << " wounds *" <<std::endl;
+    std::cout <<  " *heals " <<  target.getName() << " wounds *" <<std::endl;
 }
 

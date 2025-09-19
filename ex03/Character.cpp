@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 13:09:49 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/19 15:36:19 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 16:18:49 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ std::string  const &Character::getName()const
 
 void Character::unequip(int indx)
 {
-    if (indx < 0 || indx >= (sizeof(inventory) / sizeof (inventory[0])))
+    if (indx < 0 || indx >= 4)
         return;
     if (inventory[indx])
         inventory[indx] = NULL;
@@ -82,7 +82,7 @@ void Character::unequip(int indx)
 
 void Character::use(int idx, ICharacter &target)
 {
-    if (idx < 0 || idx >= (sizeof(inventory) / sizeof(inventory[0])))
+    if (idx < 0 || idx >= 4)
         return;
     if (inventory[idx])
         inventory[idx]->use(target);

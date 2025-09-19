@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 15:39:18 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/19 15:46:43 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 16:26:50 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ std::string const & AMateria::getType() const
 
 void AMateria::use(ICharacter &target)
 {
-    target;
+    (void)target;
 }
         

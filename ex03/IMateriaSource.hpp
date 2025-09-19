@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 16:28:24 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/19 15:51:27 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 16:23:57 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 #include "AMateria.hpp"
 
-class IMateriaSource : public AMateria
+class IMateriaSource
 {
     public:
         virtual ~IMateriaSource() {}

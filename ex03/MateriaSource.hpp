@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 16:33:19 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/19 16:03:40 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 16:11:57 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,12 @@ class MateriaSource : public IMateriaSource
         MateriaSource();
         ~MateriaSource();
 
-        AMateria *learned[4];
         void learnMateria(AMateria*) ;
         AMateria* createMateria(std::string const & type);
+        
+        private:
+            AMateria *learned[4];   
+    
 };
 
 #endif

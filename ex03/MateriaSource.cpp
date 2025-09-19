@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 15:47:19 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/19 16:04:18 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 16:34:55 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ AMateria *MateriaSource::createMateria(std::string const &type)
     {
         if (learned[i] && learned[i]->getType() == type)
         {
-            if (type == "Cure")
+            if (type == "cure")
                 return new Cure;
-            if (type == "Ice")
+            if (type == "ice")
                 return new Ice;
         }
     }

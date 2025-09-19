@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 16:26:02 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/18 16:27:54 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 16:20:36 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 
 #include "AMateria.hpp"
 
-class ICharacter : public AMateria
+class AMateria;
+
+class ICharacter
 {
     public:
         virtual ~ICharacter() {}
