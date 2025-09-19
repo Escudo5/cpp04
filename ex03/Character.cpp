@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 13:09:49 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/19 15:15:10 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 15:36:19 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,16 @@ Character::~Character()
 
 void Character::equip(AMateria *m)
 {
-    
+    if (!m)
+        return;
+    for (int i = 0; i < 4; i++)
+    {
+        if (!inventory[i])
+        {
+            inventory[i] = m;
+            return;
+        }
+    }
 }
 
 std::string  const &Character::getName()const
@@ -62,3 +71,19 @@ std::string  const &Character::getName()const
     return(name);    
 }
 
+
+void Character::unequip(int indx)
+{
+    if (indx < 0 || indx >= (sizeof(inventory) / sizeof (inventory[0])))
+        return;
+    if (inventory[indx])
+        inventory[indx] = NULL;
+}
+
+void Character::use(int idx, ICharacter &target)
+{
+    if (idx < 0 || idx >= (sizeof(inventory) / sizeof(inventory[0])))
+        return;
+    if (inventory[idx])
+        inventory[idx]->use(target);
+}

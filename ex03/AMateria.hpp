@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 16:05:26 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/18 17:03:50 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 15:45:57 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 #include <iostream>
 
+
+class ICharacter;
 class AMateria
 {
     protected:
@@ -22,9 +24,9 @@ class AMateria
     public:
 
         AMateria();
-        AMateria(const AMateria &copy);
-        AMateria &operator=(const AMateria &copy);
-        ~AMateria();
+        // AMateria(const AMateria &copy);
+        // AMateria &operator=(const AMateria &copy);
+        virtual ~AMateria();
         
 
     
