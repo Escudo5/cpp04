@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 16:23:46 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/18 17:52:16 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 12:54:28 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Ice : public AMateria
 
 
         AMateria* clone() const;
+        void use(ICharacter& target);
+
 
 
 

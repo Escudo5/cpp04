@@ -6,12 +6,14 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 17:04:56 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/18 17:49:26 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 12:56:57 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
 #include "Ice.hpp"
+#include "ICharacter.hpp"
+// #include "Character.hpp"
 
 
 
@@ -43,4 +45,9 @@ Ice::~Ice()
 AMateria *Ice::clone() const
 {
     return new Ice (*this);
+}
+
+void Ice::use(ICharacter& target)
+{
+    std::cout <<  "shoots an ice bolt at" <<  name << std::endl;
 }

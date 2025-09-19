@@ -1,38 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cure.hpp                                           :+:      :+:    :+:   */
+/*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/18 16:23:57 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/19 12:44:13 by smarquez         ###   ########.fr       */
+/*   Created: 2025/09/19 13:09:49 by smarquez          #+#    #+#             */
+/*   Updated: 2025/09/19 13:24:52 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CURE_HPP
-#define CURE_HPP
+#include "Character.hpp"
 
-#include "AMateria.hpp"
-
-
-class Cure : public AMateria
+Character::Character()
 {
-    public:
-        Cure();
-        Cure(const Cure &copy);
-        Cure &operator=(const Cure &copy);
-        ~Cure();
+    for(int i = 0; i < 4; i++)
+        this->inventory[i] = NULL;
+}
 
+Character::Character(std::string name) : name(name)
+{
 
-        AMateria* clone() const;
-         void use(ICharacter& target);
+}
 
+Character::Character(const Character &copy)
+{
+    this->name  = copy.name;
+}
 
-
-
+Character &Character::operator=(const Character &copy)
+{
     
-};
+}
 
+Character::~Character()
+{
+    
+}
 
-#endif

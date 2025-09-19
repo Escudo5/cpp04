@@ -6,12 +6,14 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 17:20:25 by smarquez          #+#    #+#             */
-/*   Updated: 2025/09/18 17:54:46 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/09/19 12:51:55 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 #include "AMateria.hpp"
+#include "ICharacter.hpp"
+
 
 Cure::Cure() : AMateria("cure")
 {
@@ -40,3 +42,9 @@ AMateria *Cure::clone() const
     return new Cure (*this);
 
 }
+
+void Cure::use(ICharacter& target)
+{
+    std::cout <<  "has healed" << std::endl;
+}
+
